@@ -120,17 +120,17 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1950893780805960}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf26b5ddcb42fa449bb38ca4fc10375d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1950893780805960}
   obstacle: {fileID: 1245667548599378, guid: d839e14f3ff2f314b8ce82771203a11f, type: 2}
-  amountOfObstacle: 1
+  amountOfObstacle: 2
   minX: -10
   maxX: 10
-  spawnTime: 3
+  spawnTime: 1
   fallSpeed: 20
 --- !u!114 &114808644783249344
 MonoBehaviour:
@@ -145,3 +145,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 50
   rb: {fileID: 54846144044284482}
+  scoreText: {fileID: 0}
