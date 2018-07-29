@@ -60,7 +60,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 54191259cb721b845b62cdf317ecbf12, type: 2}
+  - {fileID: 2100000, guid: 60a017753f76f584c9dad4dfb22c0444, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1950893780805960}
   obstacle: {fileID: 1245667548599378, guid: d839e14f3ff2f314b8ce82771203a11f, type: 2}
-  amountOfObstacle: 2
+  amountOfObstacle: 3
   minX: -10
   maxX: 10
   spawnTime: 1
@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdd1a119948616a4c9a85dd9b7ac9f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 50
+  particles: {fileID: 0}
+  movementSpeed: 60
   rb: {fileID: 54846144044284482}
   scoreText: {fileID: 0}

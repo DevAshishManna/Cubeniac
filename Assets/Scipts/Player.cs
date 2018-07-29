@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
+    public GameObject particles;
     private float score;
     private int newScore;
     public float movementSpeed;
@@ -25,26 +26,30 @@ public class Player : MonoBehaviour {
 
     void FixedUpdate()
     {
-        scoreText.GetComponent<Text>().text = "Score = " + newScore;
+        scoreText.GetComponent<Text>().text = "Score " + newScore;
     }
 
     // Update is called once per frame
     void Update () {
         score += Time.deltaTime;
         newScore = (int)score;
-
+        particles.transform.position = this.transform.position+new Vector3(movingLeft?1:-1,0,0);
         if (Input.GetMouseButtonDown(0))
         {
             movingLeft = !movingLeft;
         }
 
+
+
         if (movingLeft)
         {
+            particles.transform.rotation = new Quaternion(0, 0, 0, 0);
             rb.AddForce(-movementSpeed,0,0,ForceMode.Acceleration);
             
         }
         else
         {
+            particles.transform.rotation = new Quaternion(0, 0, 1, 0);
             rb.AddForce(movementSpeed,0,0,ForceMode.Acceleration);
   
         }
