@@ -130,8 +130,8 @@ MonoBehaviour:
   amountOfObstacle: 3
   minX: -10
   maxX: 10
-  spawnTime: 1
-  fallSpeed: 20
+  spawnTime: 3
+  fallSpeed: 10
 --- !u!114 &114808644783249344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -144,6 +144,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 0}
-  movementSpeed: 60
+  movementSpeed: 50
   rb: {fileID: 54846144044284482}
   scoreText: {fileID: 0}

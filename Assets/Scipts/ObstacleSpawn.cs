@@ -11,7 +11,7 @@ public class ObstacleSpawn : MonoBehaviour {
     public float minX, maxX;
 
     public float spawnTime = 2f;            // How long between each spawn.
-    public float fallSpeed = 40.0f;    //The speed of falling Apples
+    public float fallSpeed = 40.0f;    //The speed 
     private float timer = 0;
 
     // Use this for initialization
@@ -34,7 +34,7 @@ public class ObstacleSpawn : MonoBehaviour {
     {
         for (int i = 0; i < amountOfObstacle; i++)
         {
-            Vector3 pos = new Vector3(Random.Range(minX, maxX), Random.Range(player.transform.localPosition.y * 11, transform.localPosition.y * 12), 0);
+            Vector3 pos = new Vector3(Random.Range(minX, maxX), Random.Range(player.transform.localPosition.y * 8, transform.localPosition.y * 9), 0);
             Instantiate(obstacle.transform, pos, Quaternion.identity);
         }
     }
