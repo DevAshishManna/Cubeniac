@@ -131,7 +131,7 @@ MonoBehaviour:
   minX: -10
   maxX: 10
   spawnTime: 3
-  fallSpeed: 10
+  fallSpeed: 20
 --- !u!114 &114808644783249344
 MonoBehaviour:
   m_ObjectHideFlags: 1

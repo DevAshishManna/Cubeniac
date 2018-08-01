@@ -340,11 +340,12 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1813625229}
-    - target: {fileID: 114706815296393778, guid: cce44020e90d0f64db2565d4fdc5e0d1,
+    - target: {fileID: 114808644783249344, guid: cce44020e90d0f64db2565d4fdc5e0d1,
         type: 2}
-      propertyPath: fallSpeed
-      value: 20
-      objectReference: {fileID: 0}
+      propertyPath: obstecles
+      value: 
+      objectReference: {fileID: 1245667548599378, guid: d839e14f3ff2f314b8ce82771203a11f,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cce44020e90d0f64db2565d4fdc5e0d1, type: 2}
   m_IsPrefabParent: 0
