@@ -340,6 +340,11 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1813625229}
+    - target: {fileID: 114706815296393778, guid: cce44020e90d0f64db2565d4fdc5e0d1,
+        type: 2}
+      propertyPath: fallSpeed
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cce44020e90d0f64db2565d4fdc5e0d1, type: 2}
   m_IsPrefabParent: 0
@@ -421,8 +426,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 183463516}
-  smoothSpeed: 15
-  offset: {x: 0, y: 0.6, z: -10}
+  smoothSpeed: 0.125
+  offset: {x: 0, y: 2.5, z: -9}
 --- !u!20 &282840813
 Camera:
   m_ObjectHideFlags: 0
