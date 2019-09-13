@@ -35,7 +35,7 @@ public class ObstacleSpawn : MonoBehaviour {
         for (int i = 0; i < amountOfObstacle; i++)
         {
             Vector3 pos = new Vector3(Random.Range(minX, maxX), Random.Range(player.transform.localPosition.y * 8, transform.localPosition.y * 9), 0);
-            Instantiate(obstacle.transform, pos, Quaternion.identity);
+            Instantiate(obstacle.transform, pos, obstacle.transform.rotation);
         }
     }
 }

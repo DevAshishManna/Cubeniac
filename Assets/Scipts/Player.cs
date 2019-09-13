@@ -7,8 +7,8 @@ public class Player : MonoBehaviour {
 
     public GameObject particles;
     public GameObject obstecles;
-    private float score;
-    private int newScore;
+    public float score;
+    public int newScore;
     public float movementSpeed;
 
     private bool movingLeft;
@@ -16,7 +16,7 @@ public class Player : MonoBehaviour {
 
     public Text scoreText;
     private int previousSecond;
-
+   
 
     // Use this for initialization
     void Start () {
@@ -26,6 +26,8 @@ public class Player : MonoBehaviour {
 
         obstecles.GetComponent<Rigidbody>().drag = 2f;
         previousSecond = 0;
+
+       
     }
 
     void FixedUpdate()
@@ -67,13 +69,13 @@ public class Player : MonoBehaviour {
         if (movingLeft)
         {
             particles.transform.rotation = new Quaternion(0, 0, 0, 0);
-            rb.AddForce(-movementSpeed,0,0,ForceMode.Acceleration);
+            rb.AddForce(-movementSpeed * Time.deltaTime,0,0,ForceMode.Acceleration);
             
         }
         else
         {
             particles.transform.rotation = new Quaternion(0, 0, 1, 0);
-            rb.AddForce(movementSpeed,0,0,ForceMode.Acceleration);
+            rb.AddForce(movementSpeed * Time.deltaTime,0,0,ForceMode.Acceleration);
   
         }
 	}
